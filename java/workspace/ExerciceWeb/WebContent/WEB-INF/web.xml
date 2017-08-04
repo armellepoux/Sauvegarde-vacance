@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+version="3.1">
+  <display-name>ExerciceWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>A</servlet-name>
+  	<servlet-class>connexion.Accueil</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>A</servlet-name>
+  	<url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>B</servlet-name>
+  	<servlet-class>connexion.Connexion</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+  	<servlet-name>B</servlet-name>
+  	<url-pattern>/connexion.html</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  	<servlet-name>C</servlet-name>
+  	<servlet-class>connexion.Deconnexion</servlet-class>
+  </servlet>
+
+ <servlet-mapping>
+  	<servlet-name>C</servlet-name>
+  	<url-pattern>/deconnexion.html</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
